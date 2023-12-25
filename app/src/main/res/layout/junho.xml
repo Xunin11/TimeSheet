@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Title"
+        android:textSize="38sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/diadomes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Junho"
+        android:layout_below="@id/Title"
+        android:layout_centerInParent="true"
+        android:textSize="28sp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/proximo"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/ic_baseline_arrow_right"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:Color="@color/black"
+        android:onClick="proximo" />
+
+    <Button
+        android:id="@+id/anterior"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/ic_baseline_arrow_left"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:Color="@color/purple_700"
+        android:layout_alignParentStart="true"
+        android:onClick="anterior"/>
+
+    <ListView
+        android:id="@+id/timesheetListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anterior"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
